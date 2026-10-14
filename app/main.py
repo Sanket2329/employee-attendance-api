@@ -15,8 +15,7 @@ from typing import Any, Dict, List, Literal, Optional
 from bson import json_util
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query, status
-from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field, field_validator, model_validator
+from pydantic import BaseModel, Field, model_validator
 from pymongo import MongoClient, ReturnDocument
 from pymongo.errors import DuplicateKeyError
 from typing_extensions import Annotated
